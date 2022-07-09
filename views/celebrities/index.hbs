@@ -1,4 +1,7 @@
 <h2>Celebrities List</h2>
 {{#each celebrities}}
-  <h2>{{name}}</h2>
+  <a href="/celebrities/{{_id}}"><h2>{{name}}</h2></a>
+  <form action="/celebrities/{{_id}}/remove" method="POST"><button
+    >suppr</button></form>
 {{/each}}
+<a href="/celebrities/new">ADD a new start to our db</a>
